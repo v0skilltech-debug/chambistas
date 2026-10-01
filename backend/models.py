@@ -15,7 +15,6 @@ class Usuario(Base):
     hashed_password = Column(String)
     ciudad = Column(String, nullable=True) # Step 1
     distrito_principal = Column(String, nullable=True) # Step 1
-    departamento = Column(String, nullable=True)
     provincia = Column(String, nullable=True)
     
     rol = Column(String, default="cliente") # cliente, trabajador, empresa

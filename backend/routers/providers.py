@@ -54,7 +54,6 @@ def create_or_update_perfil(
     if data.apellidos is not None: current_user.apellidos = data.apellidos
     if data.dni is not None: current_user.dni = data.dni
     if data.telefono is not None: current_user.telefono = data.telefono
-    if data.departamento is not None: current_user.departamento = data.departamento
     if data.provincia is not None: current_user.provincia = data.provincia
     if data.distrito is not None: current_user.distrito_principal = data.distrito
 

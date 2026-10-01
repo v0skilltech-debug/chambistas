@@ -21,7 +21,6 @@ def crear_o_actualizar_perfil(
         # Update existing
         if perfil_data.ciudad is not None:
             perfil.ciudad = perfil_data.ciudad
-            current_user.departamento = perfil_data.ciudad
         if perfil_data.provincia is not None:
             perfil.provincia = perfil_data.provincia
             current_user.provincia = perfil_data.provincia
@@ -48,7 +47,6 @@ def crear_o_actualizar_perfil(
         db.add(perfil)
         
         # Sync with user table
-        current_user.departamento = perfil_data.ciudad
         current_user.provincia = perfil_data.provincia
         current_user.distrito_principal = perfil_data.distrito
 
